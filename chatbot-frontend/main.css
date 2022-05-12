@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap");
+:root {
+    --orange: #fff2bb;
+    --pink: #ffb5b5;
+    --purple: #4e4774;
+    --lightpurple: #9077ac;
+    --darkorange:#ffc444;
+
+    --primary: #B589D6;
+    --secondary: #9969C7;
+    --tertiary: #804FB3;
+    --quaternary: #6A359C;
+    --quinary: #552586;
+  }
+
+  * {
+    font-family:'Courier New', Courier, monospace;
+  }
+  body {
+      background: var(--bg);
+      padding: 20px;
+      padding-top: 70px;
+      max-width:1000px;
+      margin: auto;
+  }
+  
+  
+body {
+    font-family: monospace;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 3px;
+    margin-top: 3px;
+    color: var(--fontColor);
+}
+
+img {
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+div {
+    text-align: center;
+    align-items: center;
+    float: left;
+    margin-top: 2%;
+}
+
+
+.left {
+    width: 45%;
+    height: auto;
+}
+
+.right {
+    width: 45%;
+    height: auto;
+}
+
+.middle {
+    width: 10%;
+    height: 240px;
+}
+  .btn {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    position: relative;
+    text-align: center;
+    height: 45px;
+    width: 150px;
+    border-radius: 30px;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+    transition: transform 0.3s ease;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+  }
+
+  .btn:hover {
+    transform: translate(0, -3px);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .right-button {
+    margin-top: 25px;
+    width: 450px;
+  }
+
+  .left-button {
+    margin-top: 25px;
+    width: 450px;
+  }
+
+  .middle-button {
+    margin-top: 25px;
+    margin: 50px;
+  }
+
+  .name-btn {
+      font-family: 'Dancing Script', cursive;
+      display: inline-block;
+      color: var(--fontColor);
+      position: relative;
+      width: 60%;
+      top: -20px;
+      height: 55px;
+      border-radius: 30px;
+      border: 3px solid var(--nameborder);
+      transition: ease-out 0.3s;
+      font-size: 2rem;
+      background-color: var(--namebtnBg);
+      z-index: 1;
+      
+  }
+
+  .name-btn:hover{
+    cursor: pointer;
+  }
+
+  .name-btn:before {
+    transition: 1s all ease;
+    position:absolute;
+    top: 0;
+    left: 15%;
+    right: 15%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    border-radius: 30px;
+    background-color: var(--nameborder);
+  }
+
+  .name-btn:hover:before {
+      transition: 0.5s all ease;
+      left: -1px;
+      right:-1px;
+      top:-1px;
+      bottom: -1px;
+      opacity: 1;
+      z-index: -1;
+  }
+
+.pick {
+  font-size: 3em;
+  width: 200px;
+  margin: 0;
+  padding: 0;
+  color: white;
+  text-align: center;
+  text-shadow: 0 0.1em 8px #6c599d, 0.04em -0.03em 0 rgba(135, 104, 190, 1),
+    0.04em 0.005em 0 rgba(135, 104, 190, 1), 0.01em 0.05em 0 rgba(135, 104, 190, 1),
+    0.04em 0.05em 0 rgba(135, 104, 190, 1), 0px -0.03em 0 rgba(135, 104, 190, 1),
+    -0.03em -0.03em 0 rgba(135, 104, 190, 1), -0.03em 0.05em 0 rgba(135, 104, 190, 1), -0.03em 0 0 rgba(135, 104, 190, 1);
+  border-radius: 6px;
+  position: relative;
+  z-index: 1;
+  padding: 6px 0;
+  left: 28%;
+  bottom: 70px;
+  font-family: "Luckiest Guy", cursive;
+}
+
+
+span {
+  transform: scale(0.9);
+  display: inline-block;
+}
+span:first-child {
+  animation: bop 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards infinite
+    alternate;
+}
+span:last-child {
+  animation: bopB 1.5s 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards
+    infinite alternate;
+}
+
+/*===============Animation===============*/
+
+@keyframes bop {
+  0% {
+    transform: scale(0.8);
+  }
+  50%,
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes bopB {
+  0% {
+    transform: scale(0.8);
+  }
+  80%,
+  100% {
+    transform: scale(1) rotateZ(-3deg);
+  }
+}
+
+/*=================text2=================
+--color-primary: #e6d1f2;
+--color-secondary: var(--color-primary);
+--color-tertiary: var(--color-secondary);
+--color-quaternary: var(--color-tertiary);
+--color-quinary: var(--color-tertiary);*/
+.text_shadows {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 4em;
+  text-align: center;
+  margin: 0;
+  position: relative;
+  left: 2%;
+  bottom: 240px;
+  width: 200px;
+  color: #e6d1f2;
+  animation: shadows 2.5s ease-in infinite, move 2.5s ease-in infinite;
+}
+
+/*===============Animation2===============*/
+
+@keyframes shadows {
+  0% {
+    text-shadow: 2px 2px 5px var(--color-secondary);
+  }
+  10% {
+    text-shadow: 3px 3px 5px var(--color-secondary);
+  }
+  20% {
+    text-shadow: 3px 3px 5px var(--color-secondary),
+      6px 6px 5px var(--color-tertiary);
+  }
+  30% {
+    text-shadow: 3px 3px 5px var(--color-secondary),
+      6px 6px 5px var(--color-tertiary), 9px 9px 5px var(--color-quaternary);
+  }
+  40% {
+    text-shadow: 3px 3px 5px var(--color-secondary),
+      6px 6px 5px var(--color-tertiary), 9px 9px 5px var(--color-quaternary),
+      12px 12px 10px var(--color-quinary);
+  }
+  50% {
+    text-shadow: 3px 3px 5px var(--color-secondary),
+      6px 6px 5px var(--color-tertiary), 9px 9px 5px var(--color-quaternary),
+      12px 12px 10px var(--color-quinary);
+  }
+  60% {
+    text-shadow: 3px 3px 5px var(--color-secondary),
+      6px 6px 5px var(--color-tertiary), 9px 9px 5px var(--color-quaternary),
+      12px 12px 10px var(--color-quinary);
+  }
+  70% {
+    text-shadow: 3px 3px 5px var(--color-secondary),
+      6px 6px 5px var(--color-tertiary), 9px 9px 5px var(--color-quaternary);
+  }
+  80% {
+    text-shadow: 3px 3px 5px var(--color-secondary),
+      6px 6px 5px var(--color-tertiary);
+  }
+  90% {
+    text-shadow: 3px 3px 5px var(--color-secondary);
+  }
+  100% {
+    text-shadow: 2px 2px 5px var(--color-secondary);
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  40% {
+    transform: translate(-12px, -12px);
+  }
+  50% {
+    transform: translate(-12px, -12px);
+  }
+  60% {
+    transform: translate(-12px, -12px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+/*===============Theme===============*/
+  .light-theme {
+    --bg: var(--orange);
+    --fontColor: var(--purple);
+    --btnBg: var(--purple);
+    --btnFontColor: var(--orange);
+    --namebtnBg: var(--orange);
+    --nameborder:var(--darkorange);
+    --color-primary:var(--primary);
+    --color-secondary:var(--secondary);
+    --color-tertiary:var(--tertiary);
+    --color-quaternary:var(--quaternary);
+    --color-quinary:var(--quinary)
+  }
+  
+  .dark-theme {
+    --bg: var(--purple);
+    --fontColor: var(--orange);
+    --btnBg: var(--orange);
+    --btnFontColor: var(--purple);
+    --namebtnBg: var(--purple);
+    --nameborder:var(--lightpurple)
+  }
