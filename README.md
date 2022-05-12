@@ -33,8 +33,13 @@ the following command to test it in the console.
 ```
 $ (venv) python chat.py
 ```
-It will start running in the localhost
-the following to run the web chatbot
+A chatbot will then display in the console.
+If want to try the chatbot on website, run the following command to run server
+```
+$ (venv) python app.py
+```
+It will start running the backend in the localhost
+Then run the following command to run the web chatbot
 ```
 $ (venv) python index.html
 ```
