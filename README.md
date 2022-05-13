@@ -40,4 +40,4 @@ If want to try the chatbot on website, run the following command to run server
 $  python app.py
 ```
 It will start running the backend in the localhost
-Then open _index.html_ in _chatbot-frontend_ to run the web chatbot
+Then open ```index.html``` in ```chatbot-frontend```to run the web chatbot
