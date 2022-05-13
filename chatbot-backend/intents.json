@@ -1,0 +1,95 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey :-) I miss you! ",
+        "What's up? <3 ",
+        "Hi there! How are you?",
+        "Hello! Are you good?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure. ^_^"]
+    },
+    {
+      "tag": "negative",
+      "patterns": [
+        "I feel sad",
+        "It's terrible.",
+        "Very bad.",
+        "It become worst!",
+        "I had a terrible day"
+      ],
+      "responses": [
+        "Oh no. I am sorry, my dear. I hope you feel better soon.",
+        "Oh dear, take it easy!",
+        "i am sorry, i hope it didn't bring you pain",
+        "Oh, What's going on? You have me."
+      ]
+    },
+    {
+      "tag": "positive",
+      "patterns": [
+        "It's great.",
+        "I am so happy today",
+        "Haha",
+        "I just had the best day!",
+        "Very nice",
+        "I feel good.",
+        "I am good today!"
+      ],
+      "responses": [
+        "I am happy to hear that! Tell me more",
+        "What a great day for you!",
+        "I'm proud of you! Tell me more",
+        "Lovely! Tell me more"
+      ]
+    },
+    {
+      "tag": "funny",
+      "patterns": [
+        "Tell me a joke!",
+        "Tell me something funny!",
+        "Do you know a joke?"
+      ],
+      "responses": [
+        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+        "What did the buffalo say when his son left for college? Bison."
+      ]
+    },
+    {
+      "tag": "name",
+      "patterns": [
+        "What is your name?",
+        "Tell me your name.",
+        "How to call you?",
+        "Who are you?"
+      ],
+      "responses": [
+        "My name is ",
+        "I am ",
+        "It's "
+      ]
+    }
+  ]
+}
