@@ -20,26 +20,24 @@ _Chatbot-frontend_ :
  
 ### Install nltk package
 ```
-$ (venv) python
+$ python
 >>> import nltk
 >>> nltk.download('punkt')
 ```
 ## Implemantation
+Run the following: 
 ```
-$ (venv) python train.py
+$ python train.py
 ```
 This will dump data.pth file. And then run
 the following command to test it in the console.
 ```
-$ (venv) python chat.py
+$ python chat.py
 ```
 A chatbot will then display in the console.
 If want to try the chatbot on website, run the following command to run server
 ```
-$ (venv) python app.py
+$  python app.py
 ```
 It will start running the backend in the localhost
-Then run the following command to run the web chatbot
-```
-$ (venv) python index.html
-```
+Then open _index.html_ in _chatbot-frontend_ to run the web chatbot
